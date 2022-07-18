@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Sign up for something</h1>
+      <p id="description">This is a form to sign up for something useless.</p>
+    </header>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">
+          Enter your name:
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </label>
+        <label id="email-label">
+          Enter your email address:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+        </label>
+        <label id="number-label">
+          Enter your age:
+          <input
+            type="number"
+            id="number"
+            name="number"
+            placeholder="Enter your age"
+            min="0"
+            max="150"
+          />
+        </label>
+      </fieldset>
+      <fieldset>
+        <p class="radio-heading">What useless object do you want?</p>
+        <select id="dropdown" name="useless-stuff">
+          <option value="dull-chainsaw">Dull Chainsaw</option>
+          <option value="holey-pool">Pool full of holes</option>
+        </select>
+        <p class="radio-heading">Do you enjoy buying useless stuff?</p>
+        <label class="radio-label">
+          <input type="radio" name="yes-no" id="yes" value="yes" />
+          Yes
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="yes-no" id="no" value="no" />
+          No
+        </label>
+        <p class="radio-heading">Why do you buy useless stuff?</p>
+        <label class="radio-label">
+          <input type="checkbox" value="money" id="money" />
+          I have to much money
+        </label>
+        <label class="radio-label">
+          <input type="checkbox" value="bored" id="bored" />
+          I am bored
+        </label>
+        <p class="radio-heading">Tell us why you want to buy this useless thing</p>
+        <textarea cols="40" rows="10"></textarea>
+      </fieldset>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
